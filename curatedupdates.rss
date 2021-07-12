@@ -11,5 +11,10 @@
 <description>This allows you to see current and past information (today+) about the platform.</description>
 </item>
 
+<item>
+<title>Update: Outrage Evaluator Added to Android Platform</title>
+<description>This allows you to perform sentiment analysis on news articles.</description>
+</item>
+
 </channel>
 </rss>
