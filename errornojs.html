@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+      	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Curated News - JavaScript Error</title>
+        <meta name="description" content="Some pages on Curated News require JavaScript to render properly. We only us JavaScript where impossible to do otherwise in order to prevent security-related issues.">
+      <link rel="shortcut icon" type="image/jpg" href="favicon.ico">
+        <style>
+         * {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		}
+			
+	@font-face { 
+	font-family: changa; 
+	src: url(./static/fonts/changa.ttf); 
+	}	
+
+	body {
+		height: 100vh;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: #202020;
+		background-image: linear-gradient(315deg, #202020 0%, #303030 74%);
+	}
+
+	.noselect {
+ 	 -webkit-touch-callout: none;
+ 	   -webkit-user-select: none;
+ 	    -khtml-user-select: none;
+ 	      -moz-user-select: none;
+   	     -ms-user-select: none;
+            	user-select: none;
+			-webkit-tap-highlight-color: transparent;
+	}
+
+	button {
+		width: 150px;
+		height: 50px;
+		cursor: pointer;
+		font-size: 20px;
+		font-weight: bold;
+		color: black;
+		background: white;
+		border: 2px solid black;
+		box-shadow: 5px 5px 0 black,
+			-5px -5px 0 black,
+			-5px 5px 0 black,
+			5px -5px 0 black;
+		transition: 500ms ease-in-out;
+	}
+
+	button:hover {
+		box-shadow: 20px 5px 0 black, -20px -5px 0 black;
+	}
+
+	button:focus {
+		outline: none;
+	}
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1 style="color:white; font-family: changa;">JavaScript must be enabled for this page<span></span></h1>
+            <br></br>
+            <center>
+            <button class="name noselect" onclick="history.back()" style="font-family: changa;">Go Back</button>
+	    </center>
+        </div>
+    </body>
+</html>
