@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Curated Regions</title>
+      <meta name="description" content="An aggregated listing of local news in the U.S.">
+      <link rel="shortcut icon" type="image/jpg" href="favicon.ico">
+      <link href="./static/css/poppins.css" rel="stylesheet">
+      <link href="./static/css/font-awesome.css" rel="stylesheet" type="text/css" />
+      <link rel="stylesheet" href="./static/css/aos.css">
+      <link href="./static/css/Normalize.css" rel="stylesheet" type="text/css" />
+      <link href="./static/css/bootstrap.css" rel="stylesheet" type="text/css" />
+      <link href="./static/css/style2.css" rel="stylesheet" type="text/css" />
+      <noscript><meta http-equiv="refresh" content="1;url=errornojs.html"></noscript>
+	
+	<style>
+	  #alert {
+	    font-family: Arial, Helvetica, sans-serif;
+	    font-size: 16px;
+	    background-color: #ddd;
+	    color: #333;
+	    padding: 5px;
+	    font-weight: bold;
+	  }
+	</style>
+	
+	<script src="./static/js/raphael.js"></script>
+	<script src="scale.raphael.js"></script>
+	<script src="./static/js/jquery.js"></script>
+	<script src="./static/js/color.jquery.js"></script>
+	<script src="./static/js/jquery.usmap.js"></script>
+	
+	<script>
+	$(document).ready(function() {
+	  $('#map').usmap({
+	    'click' : function(event, data) {
+	      $('#alert')
+	        .text('You clicked: '+data.name+' on this map. This feature is still under development but will show a list of all local newspapers for that given U.S. state in the future.')
+	        .stop()
+	        .css('backgroundColor', '#ecf0f1')
+	        .animate({backgroundColor: '#ecf0f1'}, 1000);
+	    }
+	  });
+	  
+	  $('#over-md').click(function(event){
+	    $('#map').usmap('trigger', 'MD', 'mouseover', event);
+	  });
+	  
+	  $('#out-md').click(function(event){
+	    $('#map').usmap('trigger', 'MD', 'mouseout', event);
+	  });
+	});
+	</script>
+</head>
+<body>
+ <!--====== HEADER PART START ======-->
+      <header class="header-area">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-12">
+                  <nav class="navbar navbar-expand-lg">
+                     <a class="navbar-brand" href="index.html">
+                        <img src="static/images/logo.png" alt="Logo" class="img-fluid logo-curated">
+                        <h4 class="logo_text">Curated News</h4>
+                     </a>
+                     <!-- Logo -->
+                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="bar-icon"></span>
+                     <span class="bar-icon"></span>
+                     <span class="bar-icon"></span>
+                     </button>
+                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul id="nav" class="navbar-nav ml-auto">
+                           <li class="nav-item active">
+                              <a data-scroll-nav="0" href="index.html">Home</a>
+                           </li>
+                           <li class="nav-item">
+                              <a data-scroll-nav="0" href="curatednews.html">Curated News</a>
+                           </li>
+                           <li class="nav-item">
+                              <a data-scroll-nav="0" href="./curatedanalytics/index.html">Analytics</a>
+                           </li>
+                            <li class="nav-item">
+                              <a data-scroll-nav="0" href="https://tools.curatednews.xyz">Tools</a>
+                           </li>
+                           <li class="nav-item">
+                              <a data-scroll-nav="0" href="curatedregions.html">Regions</a>
+                           </li>
+                           <li class="nav-item">
+                              <a data-scroll-nav="0" href="curatedblog.html">Our Blog</a>
+                           </li>
+                        </ul>
+                        <!-- navbar nav -->
+                     </div>
+                  </nav>
+                  <!-- navbar -->
+               </div>
+            </div>
+            <!-- row -->
+         </div>
+         <!-- container -->
+      </header>
+      <!--====== HEADER PART ENDS ======--> 
+      <main>
+         <!--====== BLOG POST INTRO START ======-->
+         <section id="privacy">
+         <center>
+         <div class="thecuratedflow_img_area">
+                        <img src="./static/images/topregions.png" alt="top" class="img-fluid">
+                     </div>
+                     </center>
+            <div class="container">
+               <div class="privacy_wrap">
+                  <div class="row">
+                     <div class="col-12">
+                        <div class="privacy_heading">
+                        <h1>Curated Regions</h1>
+                        <br></br>
+                        <center>
+  			<div id="map" style="width: 930px; height: 630px; border: solid 0px red;"></div>
+  			<div id="alert"></div>
+  			</center>
+                        </div>
+                     </div>
+                  </div>
+         </section>
+         </main>
+   <!--======  footer area ======-->
+      <footer class="text-center">
+         <div class="container">
+            <div class="row">
+               <div class="col-12">
+                  <p class="follow">Want to follow us? Check out our <a href="https://www.linkedin.com/company/curatednews" class="linkedin">LinkedIn</a> or <a href="https://www.facebook.com/theofficialcuratednews/" class="linkedin">Facebook</a>.</p>
+               </div>
+               <div class="col-12">
+                  <div class="terms_and_condition">
+                     <ul>
+                        <li><a href="privacypolicy.html">Privacy Policy</a></li>
+                        <li><a href="termsandconditions.html">Terms and condition |</a><span> © 2020</span></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-12">
+                  <div class="footer_img">
+                     <a href="curatedupdates.rss"><img src="./static/images/rss.png" alt="rrs" class="img-fluid currated_img_update"></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!--======  end area ======-->
+      <!-- Back to top button -->
+      <a id="button"></a>	
+</body>
+</html>
