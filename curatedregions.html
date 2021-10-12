@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+   <head>
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,242 +14,243 @@
       <link href="./static/css/Normalize.css" rel="stylesheet" type="text/css" />
       <link href="./static/css/bootstrap.css" rel="stylesheet" type="text/css" />
       <link href="./static/css/style2.css" rel="stylesheet" type="text/css" />
-      <noscript><meta http-equiv="refresh" content="1;url=errornojs.html"></noscript>
-	
-	<script src="./static/js/raphael.js"></script>
-	<script src="./static/js/scale.raphael.js"></script>
-	<script src="./static/js/jquery.js"></script>
-	<script src="./static/js/color.jquery.js"></script>
-	<script src="./static/js/jquery.usmap.js"></script>
-	
-	<script>
-	$(document).ready(function() {
-	  $('#map').usmap({
-	    'click' : function(event, data) {
-	      $('#alert')
-	        .text('Here is all the local news for that state:')
-	        .stop()
-	        .css('backgroundColor', '#ecf0f1')
-	        .animate({backgroundColor: '#ecf0f1'}, 1000); 
-	        click = data.name;
-	        	if ((click=="FL")){
-	        	window.open("./curatedregions/curatedflorida.html");
-	        	}
-	        
-	        	if ((click=="TX")){
-                	window.open("./curatedregions/curatedtexas.html");
-	        	}
-	        	
-	        	if ((click=="LA")){
-                	window.open("./curatedregions/curatedlouisiana.html");
-	        	}
-	        	
-	        	if ((click=="HI")){
-                	window.open("./curatedregions/curatedhawaii.html");
-	        	}
-	        	
-	        	if ((click=="AK")){
-                	window.open("./curatedregions/curatedalaska.html");
-	        	}
-	        	
-	        	if ((click=="SC")){
-                	window.open("./curatedregions/curatedsouthcarolina.html");
-	        	}
-	        	
-	        	if ((click=="GA")){
-                	window.open("./curatedregions/curatedgeorgia.html");
-	        	}
-	        	
-	        	if ((click=="AL")){
-                	window.open("./curatedregions/curatedalabama.html");
-	        	}
-	        	
-	        	if ((click=="NC")){
-                	window.open("./curatedregions/curatednorthcarolina.html");
-	        	}
-	        	
-	        	if ((click=="TN")){
-                	window.open("./curatedregions/curatedtennessee.html");
-	        	}
-	        	
-	        	if ((click=="RI")){
-                	window.open("./curatedregions/curatedrhodeisland.html");
-	        	}
-	        	
-	        	if ((click=="CT")){
-                	window.open("./curatedregions/curatedconnecticut.html");
-	        	}
-	        	
-	        	if ((click=="MA")){
-                	window.open("./curatedregions/curatedmassachusetts.html");
-	        	}
-	        	
-	        	if ((click=="ME")){
-                	window.open("./curatedregions/curatedmaine.html");
-	        	}
-	        	
-	        	if ((click=="NH")){
-                	window.open("./curatedregions/curatednewhampshire.html");
-	        	}
-	        	
-	        	if ((click=="VT")){
-                	window.open("./curatedregions/curatedvermont.html");
-	        	}
-	        	
-	        	if ((click=="NY")){
-                	window.open("./curatedregions/curatednewyork.html");
-	        	}
-	        	
-	        	if ((click=="NJ")){
-                	window.open("./curatedregions/curatednewjersey.html");
-	        	}
-	        	
-	        	if ((click=="PA")){
-                	window.open("./curatedregions/curatedpennsylvania.html");
-	        	}
-	        	
-	        	if ((click=="DE")){
-                	window.open("./curatedregions/curateddelaware.html");
-	        	}
-	        	
-	        	if ((click=="MD")){
-                	window.open("./curatedregions/curatedmaryland.html");
-	        	}
-	        	
-	        	if ((click=="WV")){
-                	window.open("./curatedregions/curatedwestvirginia.html");
-	        	}
-	        	
-	        	if ((click=="KY")){
-                	window.open("./curatedregions/curatedkentucky.html");
-	        	}
-	        	
-	        	if ((click=="OH")){
-                	window.open("./curatedregions/curatedohio.html");
-	        	}
-	        	
-	        	if ((click=="MI")){
-                	window.open("./curatedregions/curatedmichigan.html");
-	        	}
-	        	
-	        	if ((click=="WY")){
-                	window.open("./curatedregions/curatedwyoming.html");
-	        	}
-	        	
-	        	if ((click=="MT")){
-                	window.open("./curatedregions/curatedmontana.html");
-	        	}
-	        	
-	        	if ((click=="ID")){
-                	window.open("./curatedregions/curatedidaho.html");
-	        	}	
-	        	
-	        	if ((click=="WA")){
-                	window.open("./curatedregions/curatedwashington.html");
-	        	}
-	        	
-	        	if ((click=="CA")){
-                	window.open("./curatedregions/curatedcalifornia.html");
-	        	}
-	        	
-	        	if ((click=="AZ")){
-                	window.open("./curatedregions/curatedarizona.html");
-	        	}
-	        	
-	        	if ((click=="NV")){
-                	window.open("./curatedregions/curatednevada.html");
-	        	}
-	        	
-	        	if ((click=="UT")){
-                	window.open("./curatedregions/curatedutah.html");
-	        	}
-	        	
-	        	if ((click=="CO")){
-                	window.open("./curatedregions/curatedcolorado.html");
-	        	}
-	        	
-	        	if ((click=="NM")){
-                	window.open("./curatedregions/curatednewmexico.html");
-	        	}
-	        	
-	        	if ((click=="OR")){
-                	window.open("./curatedregions/curatedoregon.html");
-	        	}
-	        	
-	        	if ((click=="ND")){
-                	window.open("./curatedregions/curatednorthdakota.html");
-	        	}
-	        	
-	        	if ((click=="SD")){
-                	window.open("./curatedregions/curatedsouthdakota.html");
-	        	}
-	        	
-	        	if ((click=="NE")){
-                	window.open("./curatedregions/curatednebraska.html");
-	        	}
-	        	
-	        	if ((click=="IA")){
-                	window.open("./curatedregions/curatediowa.html");
-	        	}
-	        	
-	        	if ((click=="MS")){
-                	window.open("./curatedregions/curatedmississippi.html");
-	        	}
-	        	
-	        	if ((click=="IN")){
-                	window.open("./curatedregions/curatedindiana.html");
-	        	}
-	        	
-	        	if ((click=="IL")){
-                	window.open("./curatedregions/curatedillinois.html");
-	        	}
-	        	
-	        	if ((click=="MN")){
-                	window.open("./curatedregions/curatedminnesota.html");
-	        	}
-	        	
-	        	if ((click=="WI")){
-                	window.open("./curatedregions/curatedwisconsin.html");
-	        	}
-	        	
-	        	if ((click=="MO")){
-                	window.open("./curatedregions/curatedmissouri.html");
-	        	}
-	        	
-	        	if ((click=="AR")){
-                	window.open("./curatedregions/curatedarkansas.html");
-	        	}
-	        	
-	        	if ((click=="OK")){
-                	window.open("./curatedregions/curatedoklahoma.html");
-	        	}
-	        	
-	        	if ((click=="KS")){
-                	window.open("./curatedregions/curatedkansas.html");
-	        	}
-	        	
-	        	if ((click=="VA")){
-                	window.open("./curatedregions/curatedvirginia.html");
-	        	}
-	        	
-	        	if ((click=="DC")){
-                	window.open("./curatedregions/curatedwashingtondc.html");
-	        	}
-	    }
-	  });
-	  
-	  $('#over-md').click(function(event){
-	    $('#map').usmap('trigger', 'MD', 'mouseover', event);
-	  });
-	  
-	  $('#out-md').click(function(event){
-	    $('#map').usmap('trigger', 'MD', 'mouseout', event);
-	  });
-	});
-	</script>
-</head>
-<body>
- <!--====== HEADER PART START ======-->
+      <noscript>
+         <meta http-equiv="refresh" content="1;url=errornojs.html">
+      </noscript>
+      <script src="./static/js/raphael.js"></script>
+      <script src="./static/js/scale.raphael.js"></script>
+      <script src="./static/js/jquery.js"></script>
+      <script src="./static/js/color.jquery.js"></script>
+      <script src="./static/js/jquery.usmap.js"></script>
+      <script>
+         $(document).ready(function() {
+           $('#map').usmap({
+             'click' : function(event, data) {
+               $('#alert')
+                 .text('Here is all the local news for that state:')
+                 .stop()
+                 .css('backgroundColor', '#ecf0f1')
+                 .animate({backgroundColor: '#ecf0f1'}, 1000); 
+                 click = data.name;
+                 	if ((click=="FL")){
+                 	window.open("./curatedregions/curatedflorida.html");
+                 	}
+                 
+                 	if ((click=="TX")){
+                        	window.open("./curatedregions/curatedtexas.html");
+                 	}
+                 	
+                 	if ((click=="LA")){
+                        	window.open("./curatedregions/curatedlouisiana.html");
+                 	}
+                 	
+                 	if ((click=="HI")){
+                        	window.open("./curatedregions/curatedhawaii.html");
+                 	}
+                 	
+                 	if ((click=="AK")){
+                        	window.open("./curatedregions/curatedalaska.html");
+                 	}
+                 	
+                 	if ((click=="SC")){
+                        	window.open("./curatedregions/curatedsouthcarolina.html");
+                 	}
+                 	
+                 	if ((click=="GA")){
+                        	window.open("./curatedregions/curatedgeorgia.html");
+                 	}
+                 	
+                 	if ((click=="AL")){
+                        	window.open("./curatedregions/curatedalabama.html");
+                 	}
+                 	
+                 	if ((click=="NC")){
+                        	window.open("./curatedregions/curatednorthcarolina.html");
+                 	}
+                 	
+                 	if ((click=="TN")){
+                        	window.open("./curatedregions/curatedtennessee.html");
+                 	}
+                 	
+                 	if ((click=="RI")){
+                        	window.open("./curatedregions/curatedrhodeisland.html");
+                 	}
+                 	
+                 	if ((click=="CT")){
+                        	window.open("./curatedregions/curatedconnecticut.html");
+                 	}
+                 	
+                 	if ((click=="MA")){
+                        	window.open("./curatedregions/curatedmassachusetts.html");
+                 	}
+                 	
+                 	if ((click=="ME")){
+                        	window.open("./curatedregions/curatedmaine.html");
+                 	}
+                 	
+                 	if ((click=="NH")){
+                        	window.open("./curatedregions/curatednewhampshire.html");
+                 	}
+                 	
+                 	if ((click=="VT")){
+                        	window.open("./curatedregions/curatedvermont.html");
+                 	}
+                 	
+                 	if ((click=="NY")){
+                        	window.open("./curatedregions/curatednewyork.html");
+                 	}
+                 	
+                 	if ((click=="NJ")){
+                        	window.open("./curatedregions/curatednewjersey.html");
+                 	}
+                 	
+                 	if ((click=="PA")){
+                        	window.open("./curatedregions/curatedpennsylvania.html");
+                 	}
+                 	
+                 	if ((click=="DE")){
+                        	window.open("./curatedregions/curateddelaware.html");
+                 	}
+                 	
+                 	if ((click=="MD")){
+                        	window.open("./curatedregions/curatedmaryland.html");
+                 	}
+                 	
+                 	if ((click=="WV")){
+                        	window.open("./curatedregions/curatedwestvirginia.html");
+                 	}
+                 	
+                 	if ((click=="KY")){
+                        	window.open("./curatedregions/curatedkentucky.html");
+                 	}
+                 	
+                 	if ((click=="OH")){
+                        	window.open("./curatedregions/curatedohio.html");
+                 	}
+                 	
+                 	if ((click=="MI")){
+                        	window.open("./curatedregions/curatedmichigan.html");
+                 	}
+                 	
+                 	if ((click=="WY")){
+                        	window.open("./curatedregions/curatedwyoming.html");
+                 	}
+                 	
+                 	if ((click=="MT")){
+                        	window.open("./curatedregions/curatedmontana.html");
+                 	}
+                 	
+                 	if ((click=="ID")){
+                        	window.open("./curatedregions/curatedidaho.html");
+                 	}	
+                 	
+                 	if ((click=="WA")){
+                        	window.open("./curatedregions/curatedwashington.html");
+                 	}
+                 	
+                 	if ((click=="CA")){
+                        	window.open("./curatedregions/curatedcalifornia.html");
+                 	}
+                 	
+                 	if ((click=="AZ")){
+                        	window.open("./curatedregions/curatedarizona.html");
+                 	}
+                 	
+                 	if ((click=="NV")){
+                        	window.open("./curatedregions/curatednevada.html");
+                 	}
+                 	
+                 	if ((click=="UT")){
+                        	window.open("./curatedregions/curatedutah.html");
+                 	}
+                 	
+                 	if ((click=="CO")){
+                        	window.open("./curatedregions/curatedcolorado.html");
+                 	}
+                 	
+                 	if ((click=="NM")){
+                        	window.open("./curatedregions/curatednewmexico.html");
+                 	}
+                 	
+                 	if ((click=="OR")){
+                        	window.open("./curatedregions/curatedoregon.html");
+                 	}
+                 	
+                 	if ((click=="ND")){
+                        	window.open("./curatedregions/curatednorthdakota.html");
+                 	}
+                 	
+                 	if ((click=="SD")){
+                        	window.open("./curatedregions/curatedsouthdakota.html");
+                 	}
+                 	
+                 	if ((click=="NE")){
+                        	window.open("./curatedregions/curatednebraska.html");
+                 	}
+                 	
+                 	if ((click=="IA")){
+                        	window.open("./curatedregions/curatediowa.html");
+                 	}
+                 	
+                 	if ((click=="MS")){
+                        	window.open("./curatedregions/curatedmississippi.html");
+                 	}
+                 	
+                 	if ((click=="IN")){
+                        	window.open("./curatedregions/curatedindiana.html");
+                 	}
+                 	
+                 	if ((click=="IL")){
+                        	window.open("./curatedregions/curatedillinois.html");
+                 	}
+                 	
+                 	if ((click=="MN")){
+                        	window.open("./curatedregions/curatedminnesota.html");
+                 	}
+                 	
+                 	if ((click=="WI")){
+                        	window.open("./curatedregions/curatedwisconsin.html");
+                 	}
+                 	
+                 	if ((click=="MO")){
+                        	window.open("./curatedregions/curatedmissouri.html");
+                 	}
+                 	
+                 	if ((click=="AR")){
+                        	window.open("./curatedregions/curatedarkansas.html");
+                 	}
+                 	
+                 	if ((click=="OK")){
+                        	window.open("./curatedregions/curatedoklahoma.html");
+                 	}
+                 	
+                 	if ((click=="KS")){
+                        	window.open("./curatedregions/curatedkansas.html");
+                 	}
+                 	
+                 	if ((click=="VA")){
+                        	window.open("./curatedregions/curatedvirginia.html");
+                 	}
+                 	
+                 	if ((click=="DC")){
+                        	window.open("./curatedregions/curatedwashingtondc.html");
+                 	}
+             }
+           });
+           
+           $('#over-md').click(function(event){
+             $('#map').usmap('trigger', 'MD', 'mouseover', event);
+           });
+           
+           $('#out-md').click(function(event){
+             $('#map').usmap('trigger', 'MD', 'mouseout', event);
+           });
+         });
+      </script>
+      <script async src='/cdn-cgi/challenge-platform/h/b/scripts/invisible.js'></script>
+   </head>
+   <body>
+      <!--====== HEADER PART START ======-->
       <header class="header-area">
          <div class="container">
             <div class="row">
@@ -276,7 +277,7 @@
                            <li class="nav-item">
                               <a data-scroll-nav="0" href="./curatedanalytics/index.html">Analytics</a>
                            </li>
-                            <li class="nav-item">
+                           <li class="nav-item">
                               <a data-scroll-nav="0" href="https://tools.curatednews.xyz">Tools</a>
                            </li>
                            <li class="nav-item">
@@ -300,45 +301,49 @@
       <main>
          <!--====== BLOG POST INTRO START ======-->
          <section id="privacy">
-         <center>
-         <div class="thecuratedflow_img_area">
-                        <img src="./static/images/topregions.png" alt="top" class="img-fluid">
-                     </div>
-                     </center>
+            <center>
+               <div class="thecuratedflow_img_area">
+                  <img src="./static/images/topregions.png" alt="top" class="img-fluid">
+               </div>
+            </center>
             <div class="container">
-               <div class="privacy_wrap">
-                  <div class="row">
-                     <div class="col-12">
-                        <div class="privacy_heading">
-                        <h1>Curated Regions</h1>
-                        <br></br>
-                        <p>The goal of this feature is to provide users easy interaction with our newly released Curated Regions Database. It focuses on regional and local community news aggregation. We believe local news is an important first step in solving problems of misinformation.</p>
-                        <br></br>
-                        <center>
-  			<div id="map" style="width: 930px; height: 630px; border: solid 0px;"></div>
-  			</center>
-  			<br></br>
-               <section class="download_area">
-               <h1>Are you a researcher?</h1>
-               <div class="row">
-                  <div class="col-lg-8 col-md-8 col-12">
-                     <p class="b">Our database is available as a download. Guidelines for use are available in the codebook attached.</p>
-                  </div>
-                  <div class="col-lg-4 col-md-4 col-12">
-                     <a href="./curatedregions/CuratedRegionsDatabase.zip">
-                     <button class="btn download_button t">
-                     <img src="./static/images/download.png" width="50px" height="50px">&nbsp;
-                     Download</button>
-                     </a>
+            <div class="privacy_wrap">
+            <div class="row">
+               <div class="col-12">
+                  <div class="privacy_heading">
+                     <h1>Curated Regions</h1>
+                     <br></br>
+                     <p>The goal of this feature is to provide users easy interaction with our newly released Curated Regions Database. It focuses on regional and local community news aggregation. We believe local news is an important first step in solving problems of misinformation.</p>
+                     <br></br>
+                     <center>
+                       <div class="row">
+						   <div class="col-12">
+							<div id="map" style="width: 930px; height: 630px; border: solid 0px;"></div>
+						   </div>
+					   </div>
+                     </center>
+                     <br></br>
+                     <section class="download_area">
+                        <h1>Are you a researcher?</h1>
+                        <div class="row">
+                           <div class="col-lg-8 col-md-8 col-12">
+                              <p class="b">Our database is available as a download. Guidelines for use are available in the codebook attached.</p>
+                           </div>
+                           <div class="col-lg-4 col-md-4 col-12">
+                              <a href="./curatedregions/CuratedRegionsDatabase.zip">
+                              <button class="btn download_button t">
+                              <img src="./static/images/download.png" width="50px" height="50px">&nbsp;
+                              Download</button>
+                              </a>
+                           </div>
+                        </div>
+                     </section>
                   </div>
                </div>
-         </section> 
-                        </div>
-                     </div>
-                  </div>
+            </div>
          </section>
-         </main>
-   <!--======  footer area ======-->
+      </main>
+      <!--======  footer area ======-->
       <footer class="text-center">
          <div class="container">
             <div class="row">
@@ -364,5 +369,6 @@
       <!--======  end area ======-->
       <!-- Back to top button -->
       <a id="button"></a>	
-</body>
+      <script type="text/javascript">(function(){window['__CF$cv$params']={r:'69cd45784cfa6bb5',m:'_nAbgMvYUUZ2Po8b1kwHQI5rwWpOGwS4gZO0x4PT_zQ-1634009655-0-AXKMmBi6oo0GABUvpEG5ddkvvlQLNTNWar18elXRuk604pa3DYF8hfe+DBaD+DrDecMzIX9Y26ldoP45p/nK/2NaWvKtZX0VK2Rmbj23awRC4kE7hyxww1EKBQqRClFIkOs8/klXdy7CKCYRvNGw7po=',s:[0xb482544fc6,0x56aa536139],u:'/cdn-cgi/challenge-platform/h/b'}})();</script>
+   </body>
 </html>
