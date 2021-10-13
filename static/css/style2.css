@@ -909,6 +909,7 @@ p {
 
 #privacy .privacy_wrap .privacy_heading {
 	padding-bottom: 20px;
+	overflow: hidden;
 }
 
 #privacy .privacy_wrap .privacy_heading .update_text strong {
@@ -1065,7 +1066,7 @@ footer .footer_img .currated_img_update {
 
 
 
-/*responsive css */
+/* responsive css */
 @media (max-width:1200px){
 	.privacy_wrap #map svg{
         width: 700px !important;
@@ -1078,10 +1079,10 @@ footer .footer_img .currated_img_update {
 		height: 400px !important;
 	}
 	.privacy_wrap #map svg{
-        width: 600px !important;
+		width: 451px !important;
 		max-width: 100%;
-		left: -160px !important;
-		height:400px !important;
+		left: -173px !important;
+		height: 400px !important;
 	}
 }
 
@@ -1098,34 +1099,58 @@ footer .footer_img .currated_img_update {
 }
 @media (max-width:576px){
 	.privacy_wrap #map{
-		height: 200px !important;
+		height: 160px !important;
 	}
 	.privacy_wrap #map svg{
-        width: 400px !important;
+		width: 271px !important;
 		max-width: 100%;
-		left: -260px !important;
-		height:200px !important;
+		left: -264px !important;
+		height: 200px !important;
 	}
 }
-@media (max-width:411px){
+@media (max-width:490px){
 	.privacy_wrap #map{
-		height: 200px !important;
+		height: 110px !important;
 	}
 	.privacy_wrap #map svg{
-		width: 300px !important;
+		width: 208px !important;
 		max-width: 100%;
-		left: -327px !important;
-		height: 200px !important;
+		left: -320px !important;
+		height: 110px !important;
+	}
+}
+@media (max-width:400px){
+	.privacy_wrap #map svg{
+		left: -353px !important;
 	}
 }
 @media (max-width:376px){
 	.privacy_wrap #map {
-		height: 150px !important;
+		height: 65px !important;
 	}
 	.privacy_wrap #map svg{
-        width: 250px !important;
+        width: 148px !important;
 		max-width: 100%;
-		left: -349px !important;
-		height: 150px !important;
+		left: -360px !important;
+	}
+}
+@media (max-width:333px){
+	.privacy_wrap{
+		padding: 60px 20px !important;
+	}
+	.privacy_wrap #map{
+		height: 65px !important;
+	}
+	.privacy_wrap #map svg{
+		width: 130px !important;
+		max-width: 100%;
+		left: -344px !important;
+	}
+}
+@media (max-width:260px){
+	.privacy_wrap #map svg{
+		width: 130px !important;
+		max-width: 100%;
+		left: -382px !important;
 	}
 }
