@@ -1110,13 +1110,13 @@ footer .footer_img .currated_img_update {
 }
 @media (max-width:490px){
 	.privacy_wrap #map{
-		height: 110px !important;
+		height: 158px !important;
 	}
 	.privacy_wrap #map svg{
 		width: 208px !important;
 		max-width: 100%;
 		left: -320px !important;
-		height: 110px !important;
+		height: 158px !important;
 	}
 }
 @media (max-width:400px){
