@@ -5,13 +5,6 @@ $(function () {
 
 	"use strict";
 
-	$(window).on("scroll", function () {
-		AOS.init({
-			disable: 'mobile',
-			duration: 800,
-			anchorPlacement: 'center-bottom'
-		});
-	});
 	//===== Mobile Menu 
 
 	$(".navbar-toggler").on('click', function () {
